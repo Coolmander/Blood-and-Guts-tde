@@ -91,11 +91,12 @@ export default {
 	dsa5: {
     id: 'dsa5',
     supportedTypes: ['character', 'npc', 'creature'],
-    currentHP: (token): number => token.actor.data.data.status.wounds.value,
-    maxHP: (token): number => token.actor.data.data.status.wounds.max,
-    currentHPChange: (changes: Record<string, any>): number => changes?.actorData?.data?.status?.wounds?.value,
-    maxHPChange: (changes: Record<string, any>): number => changes?.actorData?.data?.status?.wounds?.max,
-    creatureType: (token): string | void => {
+    currentHP: (token)  => token.actor.data.data.status.wounds.value,
+    maxHP: (token)  => token.actor.data.data.status.wounds.max,
+    currentHPChange: (changes) => { var _a, _b, _c, _d; return (_d = (_c = (_b = (_a = changes === null || changes === void 0 ? void 0 : changes.actorData) === null || _a === void 0 ? void 0 : _a.data) === null || _b === void 0 ? void 0 : _b.status) === null || _c === void 0 ? void 0 : _c.wounds) === null || _d === void 0 ? void 0 : _d.value; },
+    maxHPChange: (changes) => { var _a, _b, _c, _d; return (_d = (_c = (_b = (_a = changes === null || changes === void 0 ? void 0 : changes.actorData) === null || _a === void 0 ? void 0 : _a.data) === null || _b === void 0 ? void 0 : _b.status) === null || _c === void 0 ? void 0 : _c.wounds) === null || _d === void 0 ? void 0 : _d.max; },
+	
+    creatureType: (token) | void => {
       const actorType: string = token.actor.data.type.toLowerCase();
       let creatureType: string;
       if (actorType === 'character' || actorType === 'npc') {
