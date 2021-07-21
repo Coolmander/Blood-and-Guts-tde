@@ -11,7 +11,7 @@
 		"./module/controls.js"
 	],
 	"styles": [
-		"./blood-n-guts.css",
+		"./blood-n-guts.css"
 		
 	],
 	"languages": [
