@@ -1,6 +1,6 @@
 {
-	"name": "blood-n-guts-with- DSA",
-	"title": "Blood 'n Guts With DSA",
+	"name": "blood-n-guts-with-dsa",
+	"title": "Blood 'n Guts with DSA",
 	"description": "Blood 'n Guts creates blood spray and splatter when tokens recieve damage, drawing to the floor and tokens, and drawing trails of blood after tokens who have taken damage. Many options are configurable.",
 	"author": "Coolmander",
 	"version": "0.0.1",
