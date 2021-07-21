@@ -91,11 +91,11 @@ export default {
 	dsa5: {
     id: 'dsa5',
     supportedTypes: ['character', 'npc', 'creature'],
-    currentHP: (token: Token): number => token.actor.data.data.status.wounds.value,
-    maxHP: (token: Token): number => token.actor.data.data.status.wounds.max,
+    currentHP: (token): number => token.actor.data.data.status.wounds.value,
+    maxHP: (token): number => token.actor.data.data.status.wounds.max,
     currentHPChange: (changes: Record<string, any>): number => changes?.actorData?.data?.status?.wounds?.value,
     maxHPChange: (changes: Record<string, any>): number => changes?.actorData?.data?.status?.wounds?.max,
-    creatureType: (token: Token): string | void => {
+    creatureType: (token): string | void => {
       const actorType: string = token.actor.data.type.toLowerCase();
       let creatureType: string;
       if (actorType === 'character' || actorType === 'npc') {
