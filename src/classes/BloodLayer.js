@@ -15,7 +15,7 @@ import { log, LogLevel } from "../module/logging.js";
 import * as splatFonts from "../data/splatFonts.js";
 import BrushControls from "./BrushControls.js";
 //@ts-expect-error missing definition
-export default class BloodLayer extends TilesLayer {
+export default class BloodLayer extends BackgroundLayer {
     constructor() {
         super();
         this.disabled = false;
