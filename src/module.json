@@ -22,7 +22,7 @@
 		}
 	],
 	"url": "https://github.com/Coolmander/Blood-and-Guts-tde",
-	"manifest": "https://raw.githubusercontent.com/Coolmander/Blood-and-Guts-tde/master/src/module.json",
+	"manifest": "https://raw.githubusercontent.com/Coolmander/Blood-and-Guts-tde/main/src/module.json",
 	"download": "https://github.com/Coolmander/Blood-and-Guts-tde/releases/download/v0.8.7/blood-n-guts-v0.8.7.zip",
 	"changelog": "https://github.com/Coolmander/Blood-and-Guts-tde/blob/v0.8.7/changelog.md",
 	"bugs": "https://github.com/Coolmander/Blood-and-Guts-tde/issues",
