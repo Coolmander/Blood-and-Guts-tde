@@ -1,0 +1,30 @@
+{
+	"name": "blood-n-guts With DSA",
+	"title": "Blood 'n Guts With DSA",
+	"description": "Blood 'n Guts creates blood spray and splatter when tokens recieve damage, drawing to the floor and tokens, and drawing trails of blood after tokens who have taken damage. Many options are configurable.",
+	"author": "edzillion,Coolmander",
+	"version": "0.8.7",
+	"minimumCoreVersion": "0.6.0",
+	"compatibleCoreVersion": "0.7.9",
+	"esmodules": [
+		"./blood-n-guts.js",
+		"./module/controls.js"
+	],
+	"styles": [
+		"./blood-n-guts.css",
+		"../../blood-n-guts/custom.css"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"url": "https://github.com/Coolmander/Blood-and-Guts-tde",
+	"manifest": "https://raw.githubusercontent.com/Coolmander/Blood-and-Guts-tde/master/src/module.json",
+	"download": "https://github.com/Coolmander/Blood-and-Guts-tde/releases/download/v0.8.7/blood-n-guts-v0.8.7.zip",
+	"changelog": "https://github.com/Coolmander/Blood-and-Guts-tde/blob/v0.8.7/changelog.md",
+	"bugs": "https://github.com/Coolmander/Blood-and-Guts-tde/issues",
+	"allowBugReporter": true
+}

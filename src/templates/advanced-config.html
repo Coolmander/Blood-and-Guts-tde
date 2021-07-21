@@ -1,0 +1,60 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+  <div class="settings-list">
+    <h2 class="module-header">{{ localize 'blood-n-guts.advanced-config.title' }}</h2>
+    <div class="form-group submenu">
+      <label>{{ localize 'blood-n-guts.advanced-config.floorSplatFont.label' }}</label>
+      <select type="select" class="advanced-config-select-font" name="floorSplatFont">    
+        {{#select floorSplatFont}}
+          {{#each fonts}}
+            <option value="{{name}}"> {{name}} </option>
+          {{/each}}
+        {{/select}}                    
+      </select>      
+      <p class="notes">{{ localize 'blood-n-guts.advanced-config.floorSplatFont.hint'}}</p>
+    </div>
+    <div class="form-group">
+      <label>{{ localize 'blood-n-guts.advanced-config.tokenSplatFont.label' }}</label>
+      <select type="select" class="advanced-config-select-font" name="tokenSplatFont">
+        {{#select tokenSplatFont}}
+          {{#each fonts}}
+            <option value="{{name}}"> {{name}} </option>
+          {{/each}}
+        {{/select}}                    
+      </select>      
+      <p class="notes">{{ localize 'blood-n-guts.advanced-config.tokenSplatFont.hint'}}</p>
+    </div>
+    <div class="form-group">
+      <label>{{ localize 'blood-n-guts.advanced-config.trailSplatFont.label' }}</label>
+      <select type="select" class="advanced-config-select-font" name="trailSplatFont">    
+        {{#select trailSplatFont}}
+          {{#each fonts}}
+            <option value="{{name}}"> {{name}} </option>
+          {{/each}}
+        {{/select}}                    
+      </select>                           
+      <p class="notes">{{ localize 'blood-n-guts.advanced-config.trailSplatFont.hint'}}</p>
+    </div>
+    <h2 class="module-header" id="violenceLevel"> Violence Level: {{ violenceLevel }} </h2>
+    <div class="form-group">
+      <label for="currentLevel"> {{ localize 'blood-n-guts.violence-config.currentLevel.label' }}</label>        
+      <select id="currentLevel" name="currentLevel" data-dtype="String"/>
+          {{ selectOptions levels selected=currentLevel }}
+      </select>
+      
+      <button id="editButton" type="button">
+        <i class="fas fa-pen-square"></i>
+        <label>{{ localize 'blood-n-guts.button.Edit' }}</label>
+      </button>
+      <button id="newButton" type="button"> 
+        <i class="fas fa-plus-square"></i>
+        <label>{{ localize 'blood-n-guts.button.New' }}</label>
+      </button>        
+      <p class="notes"> {{ localize 'blood-n-guts.violence-config.currentLevel.hint' }} </p>
+      
+    </div>
+    <button type="button" onmousedown="event.preventDefault()" class="advanced-config-splat-window" name="splat-window"><i class="fas fa-tint"></i>Splat Window</button>
+    <button type="button" onmousedown="event.preventDefault()" class="advanced-config-wipe-scene-splats" name="wipe-scene-splats"><i class="fas fa-trash-alt"></i>Wipe Scene Splats</button>
+    <button type="submit" onmousedown="event.preventDefault()" class="advanced-config-submit" name="submit"><i class="fas fa-dice"></i>Submit</button>
+  </div>
+</form>
+

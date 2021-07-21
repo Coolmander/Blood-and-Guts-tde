@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'splatter';
+  src: url('./fonts/splatter.woff2') format('woff2'),
+      url('./fonts/splatter.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WC Rhesus A Bta';
+  src: url('./fonts/WCRhesusABta.woff2') format('woff2'),
+      url('./fonts/WCRhesusABta.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Starz2';
+  src: url('./fonts/Starz2.woff2') format('woff2'),
+      url('./fonts/Starz2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wmshapes1';
+  src: url('./fonts/Wmshapes1.woff2') format('woff2'),
+      url('./fonts/Wmshapes1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Wach Op-Art';
+  src: url('./fonts/WachOp-Art.woff2') format('woff2'),
+      url('./fonts/WachOp-Art.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sigali';
+  src: url('./fonts/Sigali-Script.woff2') format('woff2'),
+      url('./fonts/Sigali-Script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.splat-container {
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+};
+
+::-moz-color-swatch {
+  opacity: 1;
+}
+
+::-webkit-color-swatch {
+  opacity: 1;
+}
+
+#brush-controls {
+  position: absolute;
+  left: 120px;
+  width: 180px;
+  text-align: center;
+}
+
+#brush-controls h3,
+#brush-controls .label {
+  color: #FFF;
+  text-shadow: 1px 1px 0 #000;
+}
+
+#brush-controls .label {
+  position: absolute;
+  top: 14px;
+}
+#brush-controls .brush-control {
+  position: relative;
+  margin-bottom:10px;
+}
+#brush-controls .right-label {
+  right: 0;
+}
+#brush-controls .left-label {
+  left: 0;
+}
+
+#violence-config input[type=number] {
+  max-width: 50px;
+}
+#violence-config input[type=text] {
+  max-width: 150px;
+}
