@@ -10,10 +10,7 @@
 		"./blood-n-guts.js",
 		"./module/controls.js"
 	],
-	"styles": [
-		"./blood-n-guts.css",
-		"../../blood-n-guts/custom.css"
-	],
+	
 	"languages": [
 		{
 			"lang": "en",
